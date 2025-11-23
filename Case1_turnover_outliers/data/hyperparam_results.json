@@ -1,0 +1,1 @@
+{"tp": 1, "precision": 0.5, "params": {"knn_n": 2, "iforest_contamination": 0.05}}
