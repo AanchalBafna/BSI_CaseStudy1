@@ -495,7 +495,7 @@ else:
             st.table(z_df.reset_index(drop=True))
 
             if HAS_SHAP:
-                st.info('SHAP is available'
+                st.info('SHAP is available')
                 try:
                     from pyod.models.iforest import IForest as IForest_model
                     X = df_avg[cols].fillna(0).values
