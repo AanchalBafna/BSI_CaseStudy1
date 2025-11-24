@@ -3,9 +3,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+if not hasattr(np, "bool"):
+    np.bool = np.bool_
+
 import json
 from datetime import datetime
 import os
+import prophet
+prophet_kwargs = {"stan_backend": "CMDSTANPY"}
 try:
     import shap
     HAS_SHAP = True
